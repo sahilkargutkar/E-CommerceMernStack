@@ -1,0 +1,57 @@
+[debug] [2020-12-07T14:14:49.918Z] ----------------------------------------------------------------------
+[debug] [2020-12-07T14:14:49.920Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sahil\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-12-07T14:14:49.921Z] CLI Version:   8.17.0
+[debug] [2020-12-07T14:14:49.921Z] Platform:      win32
+[debug] [2020-12-07T14:14:49.921Z] Node Version:  v15.3.0
+[debug] [2020-12-07T14:14:49.922Z] Time:          Mon Dec 07 2020 19:44:49 GMT+0530 (India Standard Time)
+[debug] [2020-12-07T14:14:49.922Z] ----------------------------------------------------------------------
+[debug] [2020-12-07T14:14:49.922Z] 
+[debug] [2020-12-07T14:14:49.930Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-07T14:14:49.931Z] > authorizing via signed-in user
+[debug] [2020-12-07T14:14:49.931Z] [iam] checking project myapp-f9b41 for permissions ["firebase.projects.get"]
+[debug] [2020-12-07T14:14:49.934Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-07T14:14:49.934Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-07T14:14:51.366Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 07 Dec 2020 14:14:51 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-07T14:14:51.834Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/myapp-f9b41:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-12-07T14:14:53.443Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 07 Dec 2020 14:14:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1339","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "12" doesn't match your global version "15" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"12\" doesn't match your global version \"15\""}}
+[debug] [2020-12-07T14:14:53.484Z] defaultcredentials: writing to file C:\Users\sahil\AppData\Roaming\firebase\sahilkargutkar_sk_gmail.com_application_default_credentials.json
+[debug] [2020-12-07T14:14:53.485Z] DEBUG: Setting GAC to C:\Users\sahil\AppData\Roaming\firebase\sahilkargutkar_sk_gmail.com_application_default_credentials.json
+[debug] [2020-12-07T14:14:53.497Z] [functions] Watching "F:\Projects\Nanana\myapp\functions" for Cloud Functions...
+[debug] [2020-12-07T14:14:53.513Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-12-07T14:14:53.514Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-12-07T14:14:53.514Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-12-07T14:14:53.515Z] DEBUG: [worker-~diagnostic~-afba2dc7-9f7d-44e5-ba9d-5508f8ee56e4]: Assigning socketPath: \\?\pipe\F:\Projects\Nanana\myapp\functions\19036
+[debug] [2020-12-07T14:14:53.516Z] DEBUG: [worker-~diagnostic~-afba2dc7-9f7d-44e5-ba9d-5508f8ee56e4]: BUSY
+[debug] [2020-12-07T14:14:53.715Z] DEBUG: [runtime-status] [19036] Functions runtime initialized. {"cwd":"F:\\Projects\\Nanana\\myapp\\functions","node_version":"15.3.0"}
+[debug] [2020-12-07T14:14:53.716Z] DEBUG: [runtime-status] [19036] Disabled runtime features: undefined
+[debug] [2020-12-07T14:14:53.719Z] DEBUG: [runtime-status] [19036] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.1","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-12-07T14:14:53.721Z] DEBUG: [runtime-status] [19036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.12.0","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-12-07T14:14:53.723Z] DEBUG: [runtime-status] [19036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.12.0","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-12-07T14:14:53.726Z] DEBUG: [runtime-status] [19036] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-12-07T14:14:53.727Z] DEBUG: [runtime-status] [19036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.12.0","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-12-07T14:14:53.809Z] DEBUG: [runtime-status] [19036] Checked functions.config() {"config":{}}
+[debug] [2020-12-07T14:14:53.810Z] DEBUG: [runtime-status] [19036] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.12.0","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-12-07T14:14:53.810Z] DEBUG: [runtime-status] [19036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.12.0","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-12-07T14:14:53.810Z] DEBUG: [runtime-status] [19036] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.1","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-12-07T14:14:53.811Z] DEBUG: [runtime-status] [19036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.12.0","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-12-07T14:14:53.815Z] DEBUG: [runtime-status] [19036] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.1","resolution":"F:\\Projects\\Nanana\\myapp\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  Error: Cannot find module 'stripe'
+Require stack:
+- F:\Projects\Nanana\myapp\functions\index.js
+- C:\Users\sahil\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:919:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:763:27)
+    at Module.require (node:internal/modules/cjs/loader:991:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (F:\Projects\Nanana\myapp\functions\index.js:6:16)
+    at Module._compile (node:internal/modules/cjs/loader:1102:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1131:10)
+    at Module.load (node:internal/modules/cjs/loader:967:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:807:14)
+    at Module.require (node:internal/modules/cjs/loader:991:19) {"metadata":{"emulator":{"name":"functions"},"message":"Error: Cannot find module 'stripe'\nRequire stack:\n- F:\\Projects\\Nanana\\myapp\\functions\\index.js\n- C:\\Users\\sahil\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js\n    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:919:15)\n    at Function.Module._load (node:internal/modules/cjs/loader:763:27)\n    at Module.require (node:internal/modules/cjs/loader:991:19)\n    at require (node:internal/modules/cjs/helpers:92:18)\n    at Object.<anonymous> (F:\\Projects\\Nanana\\myapp\\functions\\index.js:6:16)\n    at Module._compile (node:internal/modules/cjs/loader:1102:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1131:10)\n    at Module.load (node:internal/modules/cjs/loader:967:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:807:14)\n    at Module.require (node:internal/modules/cjs/loader:991:19)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-12-07T14:14:54.041Z] DEBUG: [worker-~diagnostic~-afba2dc7-9f7d-44e5-ba9d-5508f8ee56e4]: exited
+[debug] [2020-12-07T14:14:54.041Z] DEBUG: [worker-~diagnostic~-afba2dc7-9f7d-44e5-ba9d-5508f8ee56e4]: FINISHED
